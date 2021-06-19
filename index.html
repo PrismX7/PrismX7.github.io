@@ -2,30 +2,74 @@
     <head>
         <title>My Website</title>
         <link rel='stylesheet' href='css/main.css'>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">        >
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <div class='header'>
+        <div class='mx-auto'>
         <h1 class='center'>Welcome to my website</h1>
 
         <p class='center'>14 year old programmer who is learning html</p>
     </div>
         <img  class='profile-pic' src='/img/pfp.png' />
-<div class='content'>
+<div class='container'>
         <p>Hi, my name is Alex, I am an incoming 9th grader who is learning to code in html. I play the saxophone and I like playing video games.</p>
-        <h2>Skills</h2>
+        
+        <div class='container mt-4'>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://www.kesslerandsons.com/wp-content/uploads/2015/07/solist-bari-sax.jpg" class="d-block w-100" height='450px' alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="http://media.steampowered.com/apps/csgo/blog/images/fb_image.png?v=6" class="d-block w-100" height='450px' alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://www.udacity.com/blog/wp-content/uploads/2020/06/HTML_Blog-scaled.jpeg" class="d-block w-100" height='450px' alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+
+        <div class='container mt-4'>
+            <h2>Skills</h2>
 
         <ul>
             <li>Python</li>
             <li>Godot</li>
             <li>HTML</li>
         </ul>
-
+    </div>
+    
+    <div class='container mt-4'>
         <h2>One of my projects</h2>
 
-        <iframe frameborder="0" src="https://itch.io/embed/860732?linkback=true" width="552" height="167"><a href="https://prismmemelord.itch.io/notjsab">NotJSAB by Prismmemelord</a></iframe>
+        <iframe frameborder="0" src="https://itch.io/embed/860732?linkback=true" width="552" height="167"><a href="https://prismmemelord.itch.io/notjsab">NotJSAB by Prismmemelord</a></iframe>  
+    </div>
+
+    <div class='container mt-4'>
+        <h2>Contact me</h2>
+        <form>
+            <label for='name' class='form-label'>Name</label>
+            <input type='text' class='form-control' name='name' />
+
+            <label for='name' class='form-label'>Email</label>
+            <input type='email' class='form-control' name='email' />
+
+            <label for='name' class='form-label'>Message</label>
+            <textarea type='text' class='form-control' name='message' rows=6></textarea>
+
+            <input type='submit' class='btn btn-primary' value='Send'>
+        </form>
     </div>
         <footer>
             <p class='center'>Copyright Alex Mitasev 2021</p>

@@ -4,3 +4,11 @@
     display: block;
     margin: 0 auto;
 }
+
+canvas {
+    width: 100%;
+}
+
+.social-links {
+    font-size: 2em;
+}

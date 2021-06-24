@@ -12,3 +12,20 @@ canvas {
 .social-links {
     font-size: 2em;
 }
+
+.fade-in {
+    opacity: 1;
+    -o-animation: fadein 5s;
+    animation: fadein 5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+
+@-o-keyframes fadein {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
